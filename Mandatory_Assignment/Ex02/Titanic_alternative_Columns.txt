@@ -1,0 +1,10 @@
+Titanic Dataset columns:
+
+    0: Survived Indicator
+    1: Passenger Class
+    2: Name
+    3: Sex
+    4: Age
+    5: Siblings Aboard
+    6: Parents Aboard
+    7: Fare paid in £s

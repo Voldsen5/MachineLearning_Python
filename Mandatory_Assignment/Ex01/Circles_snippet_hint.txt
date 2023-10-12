@@ -1,0 +1,17 @@
+1.c. Hint.
+Depending on how you structure your solution 
+the following might be useful...
+
+For some it will usefull to have a mesh to plot in.
+Using code along the lines of :
+
+# create a mesh to plot in
+x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
+                     np.arange(y_min, y_max, h))
+
+plt.subplot(1, 1, 1)
+plt.subplots_adjust(wspace=0.4, hspace=0.4)
+
+Z = rbf_svc.predict(np.c_[xx.ravel(), yy.ravel()])
